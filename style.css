@@ -48,17 +48,15 @@
     background-size: cover;
 }
 
-@keyframes bounce {
+@keyframes shadowPulse {
     0%, 100% {
-        transform: translateY(0);
-        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+        box-shadow: 0 0 0 rgba(0, 0, 255, 0);
     }
     50% {
-        transform: translateY(-9px);
-        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+        box-shadow: 0 0 10px 3px rgba(12, 133, 147, 0.8);
     }
 }
 
-.bounce {
-    animation: bounce 2s infinite;
+.shadow-pulse {
+    animation: shadowPulse 2s infinite;
 }
