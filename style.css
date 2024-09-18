@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.mulish {
+  font-family: "Mulish", sans-serif;
+ 
+}
+
+.bgprimary{
+    background-color: #0f172a;
+}
+.clrprimary{
+    color: #10ccfc;
+}
+.clrsec{
+    color: #08fce4;
+    
+}
+.bgsec{
+    background-color: #10ccfc;
+}
+.btn{
+    background-color: #10ccfc;
+    padding: 8px 24px;
+    border-radius: 50px;
+    transition: .6s;
+
+}
+.btn:hover{
+    background-color: #58d2f4;
+    box-shadow: 0px 5px 5px  #4e9bac;
+    letter-spacing: 2px;
+    
+}
+
+/* hero section */
+.hero-img{
+    background-image: url("./img/image1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+        transform: translateY(-9px);
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+}
