@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         .hero-bg {
             position: absolute;
@@ -24,14 +25,14 @@
     <!-- nav section -->
     <section>
         <nav class="max-w-screen-xl mx-auto flex justify-between items-center py-6 hover:border-b  duration-200 border-gray-800">
-            <div class="font-bold text-2xl">TAHSIN</div>
+            <div class=""><img class="h-[45px]" src="./img/lgo (2).png" alt=""></div>
             <div>
                 <ul class="flex justify-center items-center gap-9 font-semibold text-md ">
                     <li class="hover:text-[#10ccfc] transition-all duration-300"><a href="#">Home</a> </li>
-                    <li class="hover:text-[#10ccfc] transition-all duration-300"><a href="about">About</a></li>
-                    <li class="hover:text-[#10ccfc] transition-all duration-300"><a href="skills">Skills</a></li>
-                    <li class="hover:text-[#10ccfc] transition-all duration-300"><a href="award">Awards</a></li>
-                    <li class="hover:text-[#10ccfc] transition-all duration-300"><a href="contact">Contact</a></li>
+                    <li class="hover:text-[#10ccfc] transition-all duration-300"><a href="#about">About</a></li>
+                    <li class="hover:text-[#10ccfc] transition-all duration-300"><a href="#skills">Skills</a></li>
+                    <li class="hover:text-[#10ccfc] transition-all duration-300"><a href="#award">Awards</a></li>
+                    <li class="hover:text-[#10ccfc] transition-all duration-300"><a href="#contact">Contact</a></li>
                     <button class="btn">RESUME</button>
                 </ul>
             </div>
@@ -80,16 +81,77 @@
                  
                     <img class="border border-blue-950 rounded-full shadow-pulse " src="./img/myimg.png" alt="">
             </div>
-            <div class="md:mt-14">
+            <div class=" mt-4 md:mt-14">
                 <h1 class="text-xl font-semibold">Hey There 👋 I am</h1>
                 <h1 class="text-5xl font-bold my-3">MOHOTASIR AL MAMUN</h1>
                 <h1 class="text-4xl font-light clrprimary ">Computer Science & Engineering Student</h1>
+                <button class="btn mt-6 font-bold">Let's Talk</button>
+            </div>
+            <div class="*:text-2xl  flex flex-col gap-4 md:mt-14 mx-3 ">
+               <a href="" class="text-blue-400 icon"> <i class="fa-brands fa-facebook"></i></a>
+               <a href=""><i class="fa-brands fa-github icon"></i></a>
+               <a href="" class="text-blue-800 icon"><i class="fa-brands fa-linkedin"></i></a>
+               <a href="" class="text-red-400 icon"><i class="fa-solid fa-envelope"></i></a>
             </div>
         </div>
     </section>
 
     <!-- About section -->
-    <section>
+    <section id="about" class="max-w-screen-xl mx-auto my-24">
+        <div class="flex flex-col lg:flex-row gap-12">
+            <div class="md:w-4/6">
+                <h1 class="font-bold text-2xl ">ABOUT <span class="clrprimary">ME</span></h1>
+                <p class="w-[80px] h-1  bg-cyan-500 rounded-full mb-6"></p>
+                <p class="text-gray-300 font-thin text-lg tracking-wider ">I am <span class="font-bold">Mohotasir Al Mamun</span> , a 3rd-year Computer Science and Engineering (CSE) student passionate about technology and innovation. Alongside my studies, I have honed my skills as a frontend web developer, specializing in creating responsive, user-friendly web applications. I am always eager to learn new technologies and take on challenges that help me grow as a developer. My goal is to combine my academic knowledge with practical experience to build solutions that make an impact.</p>
+                <div class="flex gap-4 mt-8">
+                     <div class="border border-gray-700 rounded-lg p-4 card">
+                          <h1 class="font-bold  text-xl">2+ YEAR</h1>
+                          <p class="text-gray-400">Experience in</p>
+                          <p class=" clrprimary">Front-end Web  Web Development</p>
+                     </div>
+                     <div class="border border-gray-700 rounded-lg p-4 card">
+                          <h1 class="font-bold  text-xl">passionate  </h1>
+                          <p class="text-gray-400">about</p>
+                          <p class="clrprimary">competitive programming</p>
+                     </div>
+                     <div class="border border-gray-700 rounded-lg p-4 card">
+                          <h1 class="font-bold clrprimary text-xl">2+ YEAR</h1>
+                          <p class="text-gray-400">Experience in</p>
+                          <p class="text-gray-200">Front-end Web  Web Development</p>
+                     </div>
+                   
+                </div>
+            </div>
+            <div class="md:w-3/6">
+                <div class="flex gap-8 items-center">
+                    <h1 class="font-bold text-xl text-gray-200"><span class="clrprimary">MY</span> EDUCATION</h1>
+                    <img class="w-[90px] opacity-45" src="./img/edu.png" alt="">
+                </div>
+                <div class="container mx-auto p-5">
+                    <div class="relative border-l-2 border-blue-500">
+                        <!-- Education Entry 1 -->
+                        <div class="mb-8 ml-4">
+                            <div class="absolute -left-3 mt-1 w-6 h-6 bg-blue-500 rounded-full border-2 border-white"></div>
+                            <time class="mb-1 ml-4 text-lg font-normal leading-none clrprimary">2022 - present</time>
+                            <h3 class="text-xl font-semibold text-gray-200 my-3">B.Sc in Computer Science & Engineering</h3>
+                            <p class="text-base font-semibold text-gray-300">UNIVERSITY OF ASIA PACIFIC
+                            </p>
+                            <p class="text-sm my-3 font-normal text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="mb-8 ml-4">
+                            <div class="absolute -left-3 mt-1 w-6 h-6 bg-blue-500 rounded-full border-2 border-white"></div>
+                            <time class="mb-1 ml-4 text-lg font-normal leading-none clrprimary">2018 - 2020</time>
+                            <h3 class="text-xl font-semibold text-gray-200 my-3">Higher Secondary School Certificate</h3>
+                            <p class="text-base font-semibold text-gray-300 uppercase">Chattogram Model College
+                            </p>
+                            <p class="text-sm font-normal my-3 text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                       
+                    </div>
+                </div>
+                
+            </div>
+        </div>
         
     </section>
 

@@ -36,7 +36,7 @@
 }
 .btn:hover{
     background-color: #58d2f4;
-    box-shadow: 0px 5px 5px  #4e9bac;
+    box-shadow: 0px 2px 5px  #4e9bac;
     letter-spacing: 2px;
     
 }
@@ -59,4 +59,24 @@
 
 .shadow-pulse {
     animation: shadowPulse 2s infinite;
+}
+
+.icon{
+  transition: .4s;
+  box-shadow: 0px 0px 1px  #4e9bac;
+  padding: 8px;
+  border-radius: 10%;
+  opacity: .6;
+}
+.icon:hover{
+   
+    box-shadow: 0px 0px 10px  #4e9bac;
+    opacity: .9;
+   
+}
+.card{
+    transition: .2s;
+}
+.card:hover{
+    box-shadow: 0px 0px 5px  #4e9bac;
 }
