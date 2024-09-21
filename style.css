@@ -98,3 +98,10 @@ html {
    
   }
   
+.sdo {
+    box-shadow: 
+      1px 1px 1px #01061e, 
+      0px 3px 2px #19013e, 
+      inset 3px 3px 5px rgba(62, 61, 61, 0.3), /* Inner shadow for depth */
+      inset -3px -3px 5px rgba(255, 255, 255, 0.1); 
+  }

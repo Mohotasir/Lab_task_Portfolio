@@ -1,432 +1,866 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
     <style>
-        .hero-bg {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-        }
+      .hero-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
     </style>
-</head>
+  </head>
 
-<body class=" mx-auto mulish bgprimary text-white">
-
+  <body class="mx-auto mulish bgprimary text-white">
     <!-- nav section -->
     <section>
-        <nav class="max-w-screen-xl mx-auto flex justify-between items-center py-6 hover:border-b  duration-200 border-gray-800">
-            <div class=""><img class="h-[45px]" src="./img/lgo (2).png" alt=""></div>
-            <div>
-                <ul class="flex text-gray-400 justify-center items-center gap-9 font-semibold text-md ">
-                    <li class="hover:text-[#10ccfc] transition-all duration-300"><a href="#">Home</a> </li>
-                    <li class="hover:text-[#10ccfc] transition-all duration-300"><a href="#about">About</a></li>
-                    <li class="hover:text-[#10ccfc] transition-all duration-300"><a href="#skills">Skills</a></li>
-                    <li class="hover:text-[#10ccfc] transition-all duration-300"><a href="#award">Awards</a></li>
-                    <li class="hover:text-[#10ccfc] transition-all duration-300"><a href="#contact">Contact</a></li>
-                    <button class="btn text-white"><i class="fa-solid fa-download"></i> RESUME </button>
-                </ul>
-            </div>
-        </nav>
+      <nav
+        class="max-w-screen-xl mx-auto flex justify-between items-center py-6 hover:border-b duration-200 border-gray-800"
+      >
+        <div class="">
+          <img class="h-[45px]" src="./img/lgo (2).png" alt="" />
+        </div>
+        <div>
+          <ul
+            class="flex text-gray-400 justify-center items-center gap-9 font-semibold text-md"
+          >
+            <li class="hover:text-[#10ccfc] transition-all duration-300">
+              <a href="#">Home</a>
+            </li>
+            <li class="hover:text-[#10ccfc] transition-all duration-300">
+              <a href="#about">About</a>
+            </li>
+            <li class="hover:text-[#10ccfc] transition-all duration-300">
+              <a href="#skills">Skills</a>
+            </li>
+            <li class="hover:text-[#10ccfc] transition-all duration-300">
+              <a href="#award">Awards</a>
+            </li>
+            <li class="hover:text-[#10ccfc] transition-all duration-300">
+              <a href="#contact">Contact</a>
+            </li>
+            <button class="btn text-white">
+              <i class="fa-solid fa-download"></i> RESUME
+            </button>
+          </ul>
+        </div>
+      </nav>
     </section>
 
     <!-- Hero section -->
     <section class="relative h-[90vh]">
-        <!-- SVG background -->
-        <div class="hero-bg">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 1600 900"
-                preserveAspectRatio="xMidYMax slice">
-                <defs>
-                    <linearGradient id="bg">
-                        <stop offset="0%" style="stop-color:rgba(130, 158, 249, 0.06)"></stop>
-                        <stop offset="50%" style="stop-color:rgba(76, 190, 255, 0.6)"></stop>
-                        <stop offset="100%" style="stop-color:rgba(115, 209, 72, 0.2)"></stop>
-                    </linearGradient>
-                    <path id="wave" fill="url(#bg)" d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
-            s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z" />
-                </defs>
-                <g>
-                    <use xlink:href='#wave' opacity=".3">
-                        <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="10s"
-                            calcMode="spline" values="270 230; -334 180; 270 230" keyTimes="0; .5; 1"
-                            keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0" repeatCount="indefinite" />
-                    </use>
-                    <use xlink:href='#wave' opacity=".6">
-                        <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="8s"
-                            calcMode="spline" values="-270 230;243 220;-270 230" keyTimes="0; .6; 1"
-                            keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0" repeatCount="indefinite" />
-                    </use>
-                    <use xlink:href='#wave' opacity=".9">
-                        <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="6s"
-                            calcMode="spline" values="0 230;-140 200;0 230" keyTimes="0; .4; 1"
-                            keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0" repeatCount="indefinite" />
-                    </use>
-                </g>
-            </svg>
-        </div>
+      <!-- SVG background -->
+      <div class="hero-bg">
+        <svg
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="100%"
+          height="100%"
+          viewBox="0 0 1600 900"
+          preserveAspectRatio="xMidYMax slice"
+        >
+          <defs>
+            <linearGradient id="bg">
+              <stop
+                offset="0%"
+                style="stop-color: rgba(130, 158, 249, 0.06)"
+              ></stop>
+              <stop
+                offset="50%"
+                style="stop-color: rgba(76, 190, 255, 0.6)"
+              ></stop>
+              <stop
+                offset="100%"
+                style="stop-color: rgba(115, 209, 72, 0.2)"
+              ></stop>
+            </linearGradient>
+            <path
+              id="wave"
+              fill="url(#bg)"
+              d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+            s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z"
+            />
+          </defs>
+          <g>
+            <use xlink:href="#wave" opacity=".3">
+              <animateTransform
+                attributeName="transform"
+                attributeType="XML"
+                type="translate"
+                dur="10s"
+                calcMode="spline"
+                values="270 230; -334 180; 270 230"
+                keyTimes="0; .5; 1"
+                keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                repeatCount="indefinite"
+              />
+            </use>
+            <use xlink:href="#wave" opacity=".6">
+              <animateTransform
+                attributeName="transform"
+                attributeType="XML"
+                type="translate"
+                dur="8s"
+                calcMode="spline"
+                values="-270 230;243 220;-270 230"
+                keyTimes="0; .6; 1"
+                keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                repeatCount="indefinite"
+              />
+            </use>
+            <use xlink:href="#wave" opacity=".9">
+              <animateTransform
+                attributeName="transform"
+                attributeType="XML"
+                type="translate"
+                dur="6s"
+                calcMode="spline"
+                values="0 230;-140 200;0 230"
+                keyTimes="0; .4; 1"
+                keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                repeatCount="indefinite"
+              />
+            </use>
+          </g>
+        </svg>
+      </div>
 
-        <div class="max-w-screen-xl mx-auto flex flex-col md:flex-row md:mt-16 h-full  relative z-10">
-            <div class="md:w-1/2 relative">
-                   <div class="h-24 w-24 absolute left-0 bg-blue-300 rounded-full shadow-pulse"></div>
-                 
-                    <img class="border border-blue-950 rounded-full shadow-pulse " src="./img/myimg.png" alt="">
-            </div>
-            <div class=" mt-4 md:mt-14">
-                <h1 class="text-xl font-semibold">Hey There 👋 I am</h1>
-                <h1 class="text-5xl font-bold my-3 text-blue-200">MOHOTASIR AL MAMUN</h1>
-                <h1 class="text-4xl font-light clrprimary ">Computer Science & Engineering Student</h1>
-                <button class="btn mt-6 font-bold">Let's Talk <i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-            <div class="*:text-2xl  flex flex-col gap-4 md:mt-14 mx-3 ">
-               <a href="" class="text-blue-400 icon"> <i class="fa-brands fa-facebook"></i></a>
-               <a href=""><i class="fa-brands fa-github icon"></i></a>
-               <a href="" class="text-blue-800 icon"><i class="fa-brands fa-linkedin"></i></a>
-               <a href="" class="text-red-400 icon"><i class="fa-solid fa-envelope"></i></a>
-            </div>
+      <div
+        class="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between md:mt-16 h-full relative z-10"
+      >
+        <div class="md:w-5/12 relative"data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
+          <div
+            class="h-24 w-24 absolute left-0 bg-blue-300 rounded-full shadow-pulse"
+          ></div>
+
+          <img
+            class="border border-blue-950 rounded-full shadow-pulse"
+            src="./img/myimg.png"
+            alt=""
+          />
         </div>
+        <div class="md:w-7/12 mt-4 md:mt-14" data-aos="fade-left" data-aos-duration="1500" >
+          <h1 class="text-xl font-semibold">Hey There 👋 I am</h1>
+          <h1 class="text-5xl font-bold my-3 text-blue-200">
+            MOHOTASIR AL MAMUN
+          </h1>
+          <h1 class="text-4xl font-light clrprimary">
+            Computer Science & Engineering Student | Front-end Web Developer |
+            Programmer
+          </h1>
+          <button class="btn mt-6 font-bold">
+            Let's Talk <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="*:text-2xl flex flex-col gap-4 md:mt-14 mx-3"data-aos="fade-left" data-aos-duration="1600" data-aos-delay="200">
+          <a href="" class="text-blue-400 icon">
+            <i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href=""><i class="fa-brands fa-github icon"></i></a>
+          <a href="" class="text-blue-800 icon"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="" class="text-red-400 icon"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+        </div>
+      </div>
     </section>
 
     <!-- About section -->
     <section id="about" class="max-w-screen-xl mx-auto my-12 md:mt-24">
-        <div class="flex flex-col lg:flex-row gap-12">
-            <div class="md:w-4/6">
-                <h1 class="font-bold tracking-wider text-3xl ">ABOUT <span class="clrprimary">ME</span></h1>
-                <p class="w-[100px] h-1   bg-cyan-500 rounded-full mb-6"></p>
-                <p class="text-gray-300 font-thin text-lg tracking-wider ">I am <span class="font-bold">Mohotasir Al Mamun</span> , a 3rd-year Computer Science and Engineering (CSE) student passionate about technology and innovation. Alongside my studies, I have honed my skills as a frontend web developer, specializing in creating responsive, user-friendly web applications. I am always eager to learn new technologies and take on challenges that help me grow as a developer. My goal is to combine my academic knowledge with practical experience to build solutions that make an impact.</p>
-                <div class="flex gap-4 mt-8">
-                     <div class="border border-gray-700 rounded-lg p-4 card">
-                          <h1 class="font-bold  text-xl">2+ YEAR</h1>
-                          <p class="text-gray-400">Experience in</p>
-                          <p class=" clrprimary">Front-end Web  Web Development</p>
-                     </div>
-                     <div class="border border-gray-700 rounded-lg p-4 card">
-                          <h1 class="font-bold  text-xl">passionate  </h1>
-                          <p class="text-gray-400">about</p>
-                          <p class="clrprimary">competitive programming</p>
-                     </div>
-                     <div class="border border-gray-700 rounded-lg p-4 card">
-                          <h1 class="font-bold clrprimary text-xl">2+ YEAR</h1>
-                          <p class="text-gray-400">Experience in</p>
-                          <p class="text-gray-200">Front-end Web  Web Development</p>
-                     </div>
-                   
-                </div>
+      <div class="flex flex-col lg:flex-row gap-12">
+        <div class="md:w-4/6">
+          <h1 class="font-bold tracking-wider text-3xl"data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+            ABOUT <span class="clrprimary">ME</span>
+          </h1>
+          <p class="w-[100px] h-1 bg-cyan-500 rounded-full mb-6"data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200"></p>
+          <p class="text-gray-300 font-thin text-lg tracking-wider"data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200">
+            I am <span class="font-bold">Mohotasir Al Mamun</span> , a 3rd-year
+            Computer Science and Engineering (CSE) student passionate about
+            technology and innovation. Alongside my studies, I have honed my
+            skills as a frontend web developer, specializing in creating
+            responsive, user-friendly web applications. I am always eager to
+            learn new technologies and take on challenges that help me grow as a
+            developer. My goal is to combine my academic knowledge with
+            practical experience to build solutions that make an impact.
+          </p>
+          <div class="flex gap-4 mt-8"data-aos="fade-up" data-aos-duration="1400" data-aos-delay="200">
+            <div class="sdo border-gray-700 rounded-lg p-4 card">
+              <h1 class="font-bold text-xl">2+ YEAR</h1>
+              <p class="text-gray-400">Experience in</p>
+              <p class="clrprimary">Front-end Web Web Development</p>
             </div>
-            <div class="md:w-3/6">
-                <div class="flex gap-8 items-center">
-                    <h1 class="font-bold text-xl text-gray-200"><span class="clrprimary">MY</span> EDUCATION</h1>
-                    <img class="w-[90px] opacity-45" src="./img/edu.png" alt="">
-                </div>
-                <div class="container mx-auto p-5">
-                    <div class="relative border-l-2 border-blue-500">
-                        <!-- Education Entry 1 -->
-                        <div class="mb-8 ml-4">
-                            <div class="absolute -left-3 mt-1 w-6 h-6 bg-blue-500 rounded-full border-2 border-white"></div>
-                            <time class="mb-1 ml-4 text-lg font-normal leading-none clrprimary">2022 - present</time>
-                            <h3 class="text-xl font-semibold text-gray-200 my-3">B.Sc in Computer Science & Engineering</h3>
-                            <p class="text-base font-semibold text-gray-300">UNIVERSITY OF ASIA PACIFIC
-                            </p>
-                            <p class="text-sm my-3 font-normal text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                        <div class="mb-8 ml-4">
-                            <div class="absolute -left-3 mt-1 w-6 h-6 bg-blue-500 rounded-full border-2 border-white"></div>
-                            <time class="mb-1 ml-4 text-lg font-normal leading-none clrprimary">2018 - 2020</time>
-                            <h3 class="text-xl font-semibold text-gray-200 my-3">Higher Secondary School Certificate</h3>
-                            <p class="text-base font-semibold text-gray-300 uppercase">Chattogram Model College
-                            </p>
-                            <p class="text-sm font-normal my-3 text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                       
-                    </div>
-                </div>
-                
+            <div class="sdo border-gray-700 rounded-lg p-4 card">
+              <h1 class="font-bold text-xl">passionate</h1>
+              <p class="text-gray-400">about</p>
+              <p class="clrprimary">competitive programming</p>
             </div>
+            <div class="sdo border-gray-700 rounded-lg p-4 card">
+              <h1 class="font-bold clrprimary text-xl">2+ YEAR</h1>
+              <p class="text-gray-400">Experience in</p>
+              <p class="text-gray-200">Front-end Web Web Development</p>
+            </div>
+          </div>
         </div>
-        
+        <div class="md:w-3/6">
+          <div class="flex gap-8 items-center">
+            <h1 class="font-bold text-xl text-gray-200">
+              <span class="clrprimary">MY</span> EDUCATION
+            </h1>
+            <img class="w-[90px] opacity-45" src="./img/edu.png" alt="" />
+          </div>
+          <div class="container mx-auto p-5">
+            <div class="relative border-l-2 border-blue-500">
+              <!-- Education Entry 1 -->
+              <div class="mb-8 ml-4">
+                <div
+                  class="absolute -left-3 mt-1 w-6 h-6 bg-blue-500 rounded-full border-2 border-white"
+                ></div>
+                <time
+                  class="mb-1 ml-4 text-lg font-normal leading-none clrprimary"
+                  >2022 - present</time
+                >
+                <h3 class="text-xl font-semibold text-gray-200 my-3">
+                  B.Sc in Computer Science & Engineering
+                </h3>
+                <p class="text-base font-semibold text-gray-300">
+                  UNIVERSITY OF ASIA PACIFIC
+                </p>
+                <p class="text-sm my-3 font-normal text-gray-400">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <div class="mb-8 ml-4">
+                <div
+                  class="absolute -left-3 mt-1 w-6 h-6 bg-blue-500 rounded-full border-2 border-white"
+                ></div>
+                <time
+                  class="mb-1 ml-4 text-lg font-normal leading-none clrprimary"
+                  >2018 - 2020</time
+                >
+                <h3 class="text-xl font-semibold text-gray-200 my-3">
+                  Higher Secondary School Certificate
+                </h3>
+                <p class="text-base font-semibold text-gray-300 uppercase">
+                  Chattogram Model College
+                </p>
+                <p class="text-sm font-normal my-3 text-gray-400">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Skills section -->
-    <section id="skills" class="max-w-screen-xl mx-auto my-6 md:my-24 border border-blue-950 rounded-lg p-8 shadow-lg">
-        <!-- Skills content -->
-        <div class="flex  items-center justify-around mb-12"> 
-            <div class="">
-                 <img class="w-[200px] rotate-image opacity-50" src="./img/skill.png" alt="">
-            </div>
-            <div class="flex flex-col justify-end items-end">
-            <h1 class="font-bold text-3xl tracking-wider ">MY <span class="clrprimary">SKILLS</span></h1>
-            <p class="w-[100px] h-1  bg-cyan-500 rounded-full mb-6 ml-14"></p>
-            <p class="text-gray-400 text-md tracking-wider md:max-w-[800px]">
-                I have a strong foundation in programming languages like C, C++, Java, Python, and JavaScript. Along with expertise in frontend web development and design, I am passionate about competitive programming, focusing on problem-solving through algorithms and data structures.</p>
-            </div>
-           
+    <section
+      id="skills"
+      class="max-w-screen-xl mx-auto my-6 md:my-24 border border-blue-950 rounded-lg p-8 shadow-lg"
+    >
+      <!-- Skills content -->
+      <div class="flex items-center justify-around mb-12">
+        <div class="">
+          <img
+            class="w-[200px] rotate-image opacity-50"
+            src="./img/skill.png"
+            alt=""
+          />
         </div>
-        <div class="container mx-auto py-6">
-            <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-3">
-                <!-- Card 1: Languages -->
-                <div class="bg-[#0d1b2a] shadow-lg rounded-lg p-6">
-                    <h3 class="text-xl font-semibold mb-4">Languages</h3>
-                    <div class="grid grid-cols-3 gap-4 *:hover:bg-cyan-950 *:duration-300 ">
-                         <div class="shadow-md shadow-gray-800 rounded-lg">
-                              <img class="w-[300px] p-2" src="./img/c.png" alt="">
-                         </div>
-                         <div class="shadow-md shadow-gray-800 rounded-lg">
-                              <img class="w-[300px] p-2" src="./img/c++.png" alt="">
-                         </div>
-                         <div class="shadow-md shadow-gray-800 rounded-lg">
-                              <img class="w-[300px] p-2" src="./img/py.png" alt="">
-                         </div>
-                         <div class="shadow-md shadow-gray-800 rounded-lg">
-                              <img class="w-[300px] h-[100px] p-2" src="./img/js.svg" alt="">
-                         </div>
-                    </div>
-                </div>
-        
-                <!-- Card 2: Tools -->
-                <div class="bg-[#0d1b2a] shadow-lg rounded-lg p-6">
-                    <h3 class="text-xl font-semibold mb-4">Tools</h3>
-                    <div class="grid grid-cols-3 gap-4 *:hover:bg-cyan-950 *:duration-300 ">
-                        <div class="shadow-md shadow-gray-800 rounded-lg">
-                             <img class="w-[300px] p-2" src="./img/git.png" alt="">
-                        </div>
-                        <div class="shadow-md shadow-gray-800 rounded-lg">
-                             <img class="w-[300px] p-2" src="./img/github.png" alt="">
-                        </div>
-                        <div class="shadow-md shadow-gray-800 rounded-lg">
-                             <img class="w-[300px] p-2" src="./img/vs.png" alt="">
-                        </div>
-                        <div class="shadow-md shadow-gray-800 rounded-lg">
-                             <img class="w-[300px] h-[100px] p-2" src="./img/figma.png" alt="">
-                        </div>
-                   </div>
-                </div>
-        
-                <!-- Card 3: Technologies -->
-                <div class="bg-[#0d1b2a]  shadow-lg rounded-lg p-6">
-                    <h3 class="text-xl font-semibold mb-4">Technologies</h3>
-                    <div class="grid grid-cols-3 gap-4 *:hover:bg-cyan-950 *:duration-300">
-                        <div class="shadow-md shadow-gray-800 rounded-lg">
-                             <img class="w-[300px] p-2" src="./img/react.png" alt="">
-                        </div>
-                        <div class="shadow-md shadow-gray-800 rounded-lg">
-                             <img class="w-[300px] p-2" src="./img/nodejs.png" alt="">
-                        </div>
-                        <div class="shadow-md shadow-gray-800 rounded-lg">
-                             <img class="w-[300px] p-2" src="./img/bt.png" alt="">
-                        </div>
-                        <div class="shadow-md shadow-gray-800 rounded-lg">
-                             <img class="w-[300px] h-[100px] p-2" src="./img/mongo.png" alt="">
-                        </div>
-                        <div class="shadow-md shadow-gray-800 rounded-lg">
-                             <img class="w-[300px] h-[100px] p-2" src="./img/next.png" alt="">
-                        </div>
-                        <div class="shadow-md shadow-gray-800 rounded-lg">
-                             <img class="w-[300px] h-[100px] p-2" src="./img/css.png" alt="">
-                        </div>
-                   </div>
-                </div>
-            </div>
+        <div class="flex flex-col justify-end items-end">
+          <h1 class="font-bold text-3xl tracking-wider">
+            MY <span class="clrprimary">SKILLS</span>
+          </h1>
+          <p class="w-[100px] h-1 bg-cyan-500 rounded-full mb-6 ml-14"></p>
+          <p class="text-gray-400 text-md tracking-wider md:max-w-[800px]">
+            I have a strong foundation in programming languages like C, C++,
+            Java, Python, and JavaScript. Along with expertise in frontend web
+            development and design, I am passionate about competitive
+            programming, focusing on problem-solving through algorithms and data
+            structures.
+          </p>
         </div>
-        
+      </div>
+      <div class="container mx-auto py-6">
+        <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-3">
+          <!-- Card 1: Languages -->
+          <div
+            class="bg-[#0d1b2a] rounded-lg p-6 relative border border-gray-800"
+          >
+            <h3
+              class="sdo absolute -top-6 -left-2 rounded-full px-4 py-1 text-2xl font-thin mb-4"
+            >
+              Languages
+            </h3>
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 gap-4 *:hover:bg-cyan-950 *:duration-300 mt-4"
+            >
+              <div
+                class="sdo shadow-gray-800 rounded-lg flex flex-col justify-center items-center"
+              >
+                <img class="w-[100px] p-2" src="./img/c.png" alt="" />
+                <p
+                  class="text-center mx-auto pb-2 font-semibold text-xl text-gray-400"
+                >
+                  C
+                </p>
+              </div>
+              <div
+                class="sdo shadow-gray-800 rounded-lg flex flex-col justify-center items-center"
+              >
+                <img class="w-[100px] p-2" src="./img/c++.png" alt="" />
+                <p
+                  class="text-center mx-auto pb-2 font-semibold text-xl text-gray-400"
+                >
+                  C++
+                </p>
+              </div>
+              <div
+                class="sdo shadow-gray-800 rounded-lg flex flex-col justify-center items-center"
+              >
+                <img class="w-[100px] p-2" src="./img/py.png" alt="" />
+                <p
+                  class="text-center mx-auto pb-2 font-semibold text-lg text-gray-400"
+                >
+                  Python
+                </p>
+              </div>
+              <div
+                class="sdo shadow-gray-800 rounded-lg flex flex-col justify-center items-center"
+              >
+                <img
+                  class="w-[100px] h-[100px] p-2"
+                  src="./img/js.svg"
+                  alt=""
+                />
+                <p
+                  class="text-center mx-auto pb-2 font-semibold text-lg text-gray-400"
+                >
+                  JavaScript
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Tools -->
+          <div
+            class="bg-[#0d1b2a] shadow-lg rounded-lg p-6 relative border border-gray-800"
+          >
+            <h3
+              class="sdo absolute -top-6 -left-2 rounded-full px-4 py-1 text-2xl font-thin mb-4"
+            >
+              Tools
+            </h3>
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 gap-4 *:hover:bg-cyan-950 *:duration-300 mt-4"
+            >
+              <div
+                class="sdo shadow-gray-800 rounded-lg flex flex-col justify-center items-center"
+              >
+                <img class="w-[100px] p-2" src="./img/git.png" alt="" />
+                <p
+                  class="text-center mx-auto pb-2 font-semibold text-lg text-gray-400"
+                >
+                  Git
+                </p>
+              </div>
+              <div
+                class="sdo shadow-gray-800 rounded-lg flex flex-col justify-center items-center"
+              >
+                <img class="w-[100px] p-2" src="./img/github.png" alt="" />
+                <p
+                  class="text-center mx-auto pb-2 font-semibold text-lg text-gray-400"
+                >
+                  Github
+                </p>
+              </div>
+              <div
+                class="sdo shadow-gray-800 rounded-lg flex flex-col justify-center items-center"
+              >
+                <img class="w-[100px] p-2" src="./img/vs.png" alt="" />
+                <p
+                  class="text-center mx-auto pb-2 font-semibold text-lg text-gray-400"
+                >
+                  VScode
+                </p>
+              </div>
+              <div
+                class="sdo shadow-gray-800 rounded-lg flex flex-col justify-center items-center"
+              >
+                <img
+                  class="w-[100px] h-[100px] p-2"
+                  src="./img/figma.png"
+                  alt=""
+                />
+                <p
+                  class="text-center mx-auto pb-2 font-semibold text-lg text-gray-400"
+                >
+                  Figma
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Technologies -->
+          <div
+            class="bg-[#0d1b2a] shadow-lg rounded-lg p-6 relative border border-gray-800"
+          >
+            <h3
+              class="sdo absolute -top-6 -left-2 rounded-full px-4 py-1 text-2xl font-thin mb-4"
+            >
+              Technologies
+            </h3>
+            <div
+              class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4 *:hover:bg-cyan-950 *:duration-300"
+            >
+              <div
+                class="sdo text-center flex flex-col justify-center items-center shadow-gray-800 rounded-lg"
+              >
+                <img class="w-[100px] p-2" src="./img/react.png" alt="" />
+                <p
+                  class="text-center mx-auto pb-2 font-semibold text-lg text-gray-400"
+                >
+                  React
+                </p>
+              </div>
+              <div
+                class="sdo shadow-gray-800 rounded-lg flex flex-col justify-center items-center"
+              >
+                <img class="w-[100px] p-2" src="./img/nodejs.png" alt="" />
+                <p
+                  class="text-center mx-auto pb-2 font-semibold text-lg text-gray-400"
+                >
+                  nodejs
+                </p>
+              </div>
+              <div
+                class="sdo shadow-gray-800 rounded-lg flex flex-col justify-center items-center"
+              >
+                <img class="w-[100px] p-2" src="./img/bt.png" alt="" />
+                <p
+                  class="text-center mx-auto pb-2 font-semibold text-lg text-gray-400"
+                >
+                  Bootstrap
+                </p>
+              </div>
+              <div
+                class="sdo shadow-gray-800 rounded-lg flex flex-col justify-center items-center"
+              >
+                <img
+                  class="w-[100px] h-[100px] p-2"
+                  src="./img/mongo.png"
+                  alt=""
+                />
+                <p
+                  class="text-center mx-auto pb-2 font-semibold text-lg text-gray-400"
+                >
+                  MongoDB
+                </p>
+              </div>
+              <div
+                class="sdo shadow-gray-800 rounded-lg flex flex-col justify-center items-center"
+              >
+                <img
+                  class="w-[100px] h-[100px] p-2"
+                  src="./img/next.png"
+                  alt=""
+                />
+                <p
+                  class="text-center mx-auto pb-2 font-semibold text-lg text-gray-400"
+                >
+                  Next.js
+                </p>
+              </div>
+              <div
+                class="sdo shadow-gray-800 rounded-lg flex flex-col justify-center items-center"
+              >
+                <img
+                  class="w-[100px] h-[100px] p-2"
+                  src="./img/css.png"
+                  alt=""
+                />
+                <p
+                  class="text-center mx-auto pb-2 font-semibold text-lg text-gray-400"
+                >
+                  CSS3
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Award section -->
     <section class="bg-[#0d1b2a] text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 class="text-3xl font-bold text-blue-400 text-center mb-10">Certificates & Awards</h2>
-      
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <!-- Certificate 1 -->
-            <div class="bg-[#112240] rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
-              <h3 class="text-xl font-semibold text-blue-300">Certified Frontend Developer</h3>
-              <p class="text-sm text-gray-400 mt-2">Issued by: Udemy | Jan 2023</p>
-              <p class="text-gray-300 mt-4">
-                This certification verifies the completion of a comprehensive frontend web development
-                course, covering HTML, CSS, JavaScript, and React.
-              </p>
-            </div>
-      
-            <!-- Certificate 2 -->
-            <div class="bg-[#112240] rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
-              <h3 class="text-xl font-semibold text-blue-300">JavaScript Algorithms & Data Structures</h3>
-              <p class="text-sm text-gray-400 mt-2">Issued by: freeCodeCamp | Mar 2022</p>
-              <p class="text-gray-300 mt-4">
-                Certification demonstrating proficiency in solving algorithms, writing functions, and
-                building data structures using JavaScript.
-              </p>
-            </div>
-      
-            <!-- Award 1 -->
-            <div class="bg-[#112240] rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
-              <h3 class="text-xl font-semibold text-blue-300">Competitive Programming Award</h3>
-              <p class="text-sm text-gray-400 mt-2">Awarded by: Codeforces | Nov 2023</p>
-              <p class="text-gray-300 mt-4">
-                Recognized for outstanding performance in competitive programming, problem-solving, and
-                algorithm design.
-              </p>
-            </div>
-      
-            <!-- Award 2 -->
-            <div class="bg-[#112240] rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
-              <h3 class="text-xl font-semibold text-blue-300">Web Developer Challenge Winner</h3>
-              <p class="text-sm text-gray-400 mt-2">Awarded by: Local Hackathon | Aug 2023</p>
-              <p class="text-gray-300 mt-4">
-                First place in a local hackathon where the challenge involved building a fully responsive
-                and functional web application in 24 hours.
-              </p>
-            </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 class="font-bold text-4xl tracking-wider">
+          Certificates &  <span class="clrprimary">Awards</span>
+        </h1>
+        <p class="w-[180px] h-1 bg-cyan-500 rounded-full mb-6"></p>
+        <p class="text-gray-400 text-md tracking-wider md:max-w-[800px] mb-8">I am proud to have earned several prestigious awards and certifications that reflect my dedication to excellence and learning. Among these, I received a certificate for completing a comprehensive web development course. I was also honored with the Vice Chancellor Award for Brilliant Excellence, recognizing my outstanding academic performance and commitment to achieving excellence.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Certificate 1 -->
+          <div
+            class="sdo bg-[#112240] rounded-lg p-6  hover:shadow-xl transition-shadow"
+          >
+           <img class="h-[350px] w-full rounded-lg mb-3" src="./img/certi.avif" alt="">
+            <h3 class="text-xl font-semibold text-blue-300">
+              Certified Frontend Developer
+            </h3>
+            <p class="text-sm text-gray-400 mt-2">
+              Issued by: Udemy | Jan 2023
+            </p>
+            
+          </div>
+          <div
+            class="sdo bg-[#112240] rounded-lg p-6  hover:shadow-xl transition-shadow"
+          >
+           <img class="h-[350px] w-full rounded-lg mb-3" src="./img/certi.avif" alt="">
+            <h3 class="text-xl font-semibold text-blue-300">
+              Certified Frontend Developer
+            </h3>
+            <p class="text-sm text-gray-400 mt-2">
+              Issued by: Udemy | Jan 2023
+            </p>
+            
+          </div>
+          <div
+            class="sdo bg-[#112240] rounded-lg p-6  hover:shadow-xl transition-shadow"
+          >
+           <img class="h-[350px] w-full rounded-lg mb-3" src="./img/certi.avif" alt="">
+            <h3 class="text-xl font-semibold text-blue-300">
+              Certified Frontend Developer
+            </h3>
+            <p class="text-sm text-gray-400 mt-2">
+              Issued by: Udemy | Jan 2023
+            </p>
+            
+          </div>
+          <div
+            class="sdo bg-[#112240] rounded-lg p-6  hover:shadow-xl transition-shadow"
+          >
+           <img class="h-[350px] w-full rounded-lg mb-3" src="./img/certi.avif" alt="">
+            <h3 class="text-xl font-semibold text-blue-300">
+              Certified Frontend Developer
+            </h3>
+            <p class="text-sm text-gray-400 mt-2">
+              Issued by: Udemy | Jan 2023
+            </p>
+            
+          </div>
+
+         
+        </div>
+      </div>
+    </section>
+    <!-- hobby section -->
+    <section
+      class="bg-[#0d1b2a] shadow-lg my-12 border border-blue-950 rounded-lg p-12 max-w-screen-xl mx-auto"
+    >
+      <h1 class="font-bold tracking-wider text-3xl">
+        MY <span class="clrprimary">HOBBY</span>
+      </h1>
+      <p class="w-[100px] h-1 ml-16 bg-cyan-500 rounded-full mb-6"></p>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Hobby Card 1 -->
+          <div
+            class="bg-[#1c2d3f] p-6 rounded-lg shadow-lg transition-shadow duration-300 hover:shadow-2xl hover:shadow-blue-400/50"
+          >
+            <h3 class="text-2xl font-semibold text-white">
+              Competitive Programming
+            </h3>
+          </div>
+
+          <!-- Hobby Card 2 -->
+          <div
+            class="bg-[#1c2d3f] p-6 rounded-lg shadow-lg transition-shadow duration-300 hover:shadow-2xl hover:shadow-green-400/50"
+          >
+            <h3 class="text-2xl font-semibold text-white">Web Development</h3>
+          </div>
+
+          <!-- Hobby Card 3 -->
+          <div
+            class="bg-[#1c2d3f] p-6 rounded-lg shadow-lg transition-shadow duration-300 hover:shadow-2xl hover:shadow-red-400/50"
+          >
+            <h3 class="text-2xl font-semibold text-white">
+              Reading Tech Blogs
+            </h3>
+          </div>
+
+          <!-- Hobby Card 4 -->
+          <div
+            class="bg-[#1c2d3f] p-6 rounded-lg shadow-lg transition-shadow duration-300 hover:shadow-2xl hover:shadow-yellow-400/50"
+          >
+            <h3 class="text-2xl font-semibold text-white">Traveling</h3>
+          </div>
+
+          <!-- Hobby Card 5 -->
+          <div
+            class="bg-[#1c2d3f] p-6 rounded-lg shadow-lg transition-shadow duration-300 hover:shadow-2xl hover:shadow-purple-400/50"
+          >
+            <h3 class="text-2xl font-semibold text-white">Playing Chess</h3>
+          </div>
+
+          <!-- Hobby Card 6 -->
+          <div
+            class="bg-[#1c2d3f] p-6 rounded-lg shadow-lg transition-shadow duration-300 hover:shadow-2xl hover:shadow-pink-400/50"
+          >
+            <h3 class="text-2xl font-semibold text-white">Photography</h3>
           </div>
         </div>
-      </section>
-      <!-- hobby section -->
-      <section class="bg-[#0d1b2a] shadow-lg my-12 border border-blue-950 rounded-lg  p-12 max-w-screen-xl mx-auto">
-        <h1 class="font-bold tracking-wider text-3xl ">MY <span class="clrprimary">HOBBY</span></h1>
-        <p class="w-[100px] h-1  ml-16 bg-cyan-500 rounded-full mb-6"></p>
-        <div class="max-w-7xl  mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-      
-            <!-- Hobby Card 1 -->
-            <div class="bg-[#1c2d3f] p-6 rounded-lg shadow-lg transition-shadow duration-300 hover:shadow-2xl hover:shadow-blue-400/50">
-              <h3 class="text-2xl font-semibold text-white">Competitive Programming</h3>
-            </div>
-      
-            <!-- Hobby Card 2 -->
-            <div class="bg-[#1c2d3f] p-6 rounded-lg shadow-lg transition-shadow duration-300 hover:shadow-2xl hover:shadow-green-400/50">
-              <h3 class="text-2xl font-semibold text-white">Web Development</h3>
-            </div>
-      
-            <!-- Hobby Card 3 -->
-            <div class="bg-[#1c2d3f] p-6 rounded-lg shadow-lg transition-shadow duration-300 hover:shadow-2xl hover:shadow-red-400/50">
-              <h3 class="text-2xl font-semibold text-white">Reading Tech Blogs</h3>
-            </div>
-      
-            <!-- Hobby Card 4 -->
-            <div class="bg-[#1c2d3f] p-6 rounded-lg shadow-lg transition-shadow duration-300 hover:shadow-2xl hover:shadow-yellow-400/50">
-              <h3 class="text-2xl font-semibold text-white">Traveling</h3>
-            </div>
-      
-            <!-- Hobby Card 5 -->
-            <div class="bg-[#1c2d3f] p-6 rounded-lg shadow-lg transition-shadow duration-300 hover:shadow-2xl hover:shadow-purple-400/50">
-              <h3 class="text-2xl font-semibold text-white">Playing Chess</h3>
-            </div>
-      
-            <!-- Hobby Card 6 -->
-            <div class="bg-[#1c2d3f] p-6 rounded-lg shadow-lg transition-shadow duration-300 hover:shadow-2xl hover:shadow-pink-400/50">
-              <h3 class="text-2xl font-semibold text-white">Photography</h3>
-            </div>
-      
-          </div>
-        </div>
-      </section>
-      
-      <!-- contact section -->
-      <section id="contact" class=" text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 class="text-3xl font-bold text-blue-400 text-center mb-10">Get in Touch</h2>
-          
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <!-- Contact Information -->
-            <div class="flex flex-col space-y-4">
-              <h3 class="text-xl font-semibold text-blue-300">Contact Information</h3>
-              <p class="text-gray-300">Feel free to reach out if you'd like to discuss a project or simply want to connect.</p>
-              
-              <div class="space-y-2">
-                <div class="flex items-center">
-                  <svg class="w-6 h-6 text-blue-300 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12H8m0 0l4 4m-4-4l4-4"></path></svg>
-                  <span class="text-gray-300">Email: youremail@example.com</span>
-                </div>
-      
-                <div class="flex items-center">
-                  <svg class="w-6 h-6 text-blue-300 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A5.007 5.007 0 0111 13.5h2a5.007 5.007 0 015.879 4.304l.916 3.664c.144.575-.091 1.187-.616 1.553a1.743 1.743 0 01-1.947.09L16 21H8l-1.232.611a1.743 1.743 0 01-1.947-.09 1.743 1.743 0 01-.616-1.553l.916-3.664z"></path></svg>
-                  <span class="text-gray-300">Phone: +123 456 7890</span>
-                </div>
-      
-                <div class="flex items-center">
-                  <svg class="w-6 h-6 text-blue-300 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7-5 7 5v10a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"></path></svg>
-                  <span class="text-gray-300">Address: 1234 Street Name, City, Country</span>
-                </div>
+      </div>
+    </section>
+
+    <!-- contact section -->
+    <section id="contact" class="text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-blue-400 text-center mb-10">
+          Get in Touch
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Contact Information -->
+          <div class="flex flex-col space-y-4">
+            <h3 class="text-xl font-semibold text-blue-300">
+              Contact Information
+            </h3>
+            <p class="text-gray-300">
+              Feel free to reach out if you'd like to discuss a project or
+              simply want to connect.
+            </p>
+
+            <div class="space-y-2">
+              <div class="flex items-center">
+                <svg
+                  class="w-6 h-6 text-blue-300 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M16 12H8m0 0l4 4m-4-4l4-4"
+                  ></path>
+                </svg>
+                <span class="text-gray-300">Email: youremail@example.com</span>
+              </div>
+
+              <div class="flex items-center">
+                <svg
+                  class="w-6 h-6 text-blue-300 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5.121 17.804A5.007 5.007 0 0111 13.5h2a5.007 5.007 0 015.879 4.304l.916 3.664c.144.575-.091 1.187-.616 1.553a1.743 1.743 0 01-1.947.09L16 21H8l-1.232.611a1.743 1.743 0 01-1.947-.09 1.743 1.743 0 01-.616-1.553l.916-3.664z"
+                  ></path>
+                </svg>
+                <span class="text-gray-300">Phone: +123 456 7890</span>
+              </div>
+
+              <div class="flex items-center">
+                <svg
+                  class="w-6 h-6 text-blue-300 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 8l7-5 7 5v10a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"
+                  ></path>
+                </svg>
+                <span class="text-gray-300"
+                  >Address: 1234 Street Name, City, Country</span
+                >
               </div>
             </div>
-      
-            <!-- Contact Form -->
-            <div>
-              <form action="#" method="POST" class="bg-[#112240] p-6 rounded-lg shadow-lg space-y-4">
-                <div>
-                  <label for="name" class="block text-sm font-medium text-blue-300">Name</label>
-                  <input type="text" id="name" name="name" class="mt-1 block w-full bg-[#0d1b2a] border border-gray-600 rounded-md text-gray-300 py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Your Name">
-                </div>
-                <div>
-                  <label for="email" class="block text-sm font-medium text-blue-300">Email</label>
-                  <input type="email" id="email" name="email" class="mt-1 block w-full bg-[#0d1b2a] border border-gray-600 rounded-md text-gray-300 py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Your Email">
-                </div>
-                <div>
-                  <label for="message" class="block text-sm font-medium text-blue-300">Message</label>
-                  <textarea id="message" name="message" rows="4" class="mt-1 block w-full bg-[#0d1b2a] border border-gray-600 rounded-md text-gray-300 py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Your Message"></textarea>
-                </div>
-                <div>
-                  <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-md transition">Send Message</button>
-                </div>
-              </form>
-            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div>
+            <form
+              action="#"
+              method="POST"
+              class="bg-[#112240] p-6 rounded-lg shadow-lg space-y-4"
+            >
+              <div>
+                <label
+                  for="name"
+                  class="block text-sm font-medium text-blue-300"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="mt-1 block w-full bg-[#0d1b2a] border border-gray-600 rounded-md text-gray-300 py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div>
+                <label
+                  for="email"
+                  class="block text-sm font-medium text-blue-300"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="mt-1 block w-full bg-[#0d1b2a] border border-gray-600 rounded-md text-gray-300 py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                  placeholder="Your Email"
+                />
+              </div>
+              <div>
+                <label
+                  for="message"
+                  class="block text-sm font-medium text-blue-300"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  class="mt-1 block w-full bg-[#0d1b2a] border border-gray-600 rounded-md text-gray-300 py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                  placeholder="Your Message"
+                ></textarea>
+              </div>
+              <div>
+                <button
+                  type="submit"
+                  class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-md transition"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
           </div>
         </div>
-      </section>
-      
+      </div>
+    </section>
+
     <!-- Footer section -->
     <footer class="bg-[#0d1b2a] text-white py-8">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      
-            <!-- Logo and Social Links -->
-            <div>
-              <h3 class="text-2xl font-bold text-blue-400">Mohotasir Al Mamun</h3>
-              <p class="mt-2 text-gray-400">Computer Science & Engineering Student passionate about web development and competitive programming.</p>
-              
-              <!-- Social Media Links -->
-              <div class="flex space-x-4 mt-4">
-                <a href="https://facebook.com" class="text-gray-400 hover:text-blue-400 transition">
-                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.73 0-1.325.597-1.325 1.326v21.348c0 .73.595 1.326 1.325 1.326h11.495v-9.284h-3.13v-3.622h3.13v-2.671c0-3.1 1.89-4.785 4.648-4.785 1.322 0 2.46.099 2.791.143v3.24h-1.914c-1.502 0-1.793.714-1.793 1.76v2.313h3.587l-.467 3.622h-3.12v9.283h6.11c.73 0 1.326-.596 1.326-1.325v-21.35c0-.73-.596-1.326-1.325-1.326z"/></svg>
-                </a>
-                <a href="https://linkedin.com" class="text-gray-400 hover:text-blue-400 transition">
-                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19.709 19.708h-3.561v-5.347c0-1.276-.027-2.918-1.78-2.918-1.782 0-2.055 1.391-2.055 2.827v5.438h-3.562v-10.984h3.421v1.503h.047c.477-.901 1.639-1.853 3.372-1.853 3.606 0 4.271 2.371 4.271 5.453v5.881zm-12.564-12.707c-1.144 0-2.067-.925-2.067-2.066 0-1.144.923-2.065 2.067-2.065 1.142 0 2.066.921 2.066 2.065 0 1.141-.924 2.066-2.066 2.066zm1.782 12.707h-3.565v-10.984h3.565v10.984zm13.073-20h-18.392c-.663 0-1.205.541-1.205 1.205v18.392c0 .662.542 1.204 1.205 1.204h18.392c.664 0 1.205-.542 1.205-1.204v-18.392c0-.664-.541-1.205-1.205-1.205z"/></svg>
-                </a>
-                <a href="https://github.com" class="text-gray-400 hover:text-blue-400 transition">
-                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.807 1.305 3.492.998.108-.776.418-1.305.762-1.605-2.665-.305-5.467-1.335-5.467-5.93 0-1.31.47-2.38 1.235-3.22-.125-.303-.535-1.524.115-3.176 0 0 1.01-.323 3.3 1.23.96-.267 1.985-.399 3.005-.405 1.02.006 2.045.138 3.005.405 2.29-1.553 3.3-1.23 3.3-1.23.65 1.653.24 2.874.115 3.176.765.84 1.235 1.91 1.235 3.22 0 4.61-2.805 5.625-5.475 5.92.43.37.823 1.102.823 2.222 0 1.605-.015 2.898-.015 3.293 0 .32.215.694.825.577 4.765-1.585 8.205-6.082 8.205-11.385 0-6.627-5.373-12-12-12z"/></svg>
-                </a>
-              </div>
-            </div>
-      
-            <!-- Quick Links -->
-            <div class="space-y-4">
-              <h3 class="text-xl font-semibold text-blue-300">Quick Links</h3>
-              <ul class="space-y-2">
-                <li><a href="#home" class="hover:text-blue-400 transition">Home</a></li>
-                <li><a href="#about" class="hover:text-blue-400 transition">About</a></li>
-                <li><a href="#skills" class="hover:text-blue-400 transition">Skills</a></li>
-                <li><a href="#contact" class="hover:text-blue-400 transition">Contact</a></li>
-              </ul>
-            </div>
-      
-            <!-- Copyright -->
-            <div class="text-center md:text-left">
-              <p class="text-gray-400">&copy; 2024 Mohotasir Al Mamun. All rights reserved.</p>
-              <p class="text-gray-500 mt-2">Built with 💙 using Tailwind CSS</p>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Logo and Social Links -->
+          <div>
+            <h3 class="text-2xl font-bold text-blue-400">Mohotasir Al Mamun</h3>
+            <p class="mt-2 text-gray-400">
+              Computer Science & Engineering Student passionate about web
+              development and competitive programming.
+            </p>
+
+            <!-- Social Media Links -->
+            <div class="flex space-x-4 mt-4">
+              <a
+                href="https://facebook.com"
+                class="text-gray-400 hover:text-blue-400 transition"
+              >
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M22.675 0h-21.35c-.73 0-1.325.597-1.325 1.326v21.348c0 .73.595 1.326 1.325 1.326h11.495v-9.284h-3.13v-3.622h3.13v-2.671c0-3.1 1.89-4.785 4.648-4.785 1.322 0 2.46.099 2.791.143v3.24h-1.914c-1.502 0-1.793.714-1.793 1.76v2.313h3.587l-.467 3.622h-3.12v9.283h6.11c.73 0 1.326-.596 1.326-1.325v-21.35c0-.73-.596-1.326-1.325-1.326z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://linkedin.com"
+                class="text-gray-400 hover:text-blue-400 transition"
+              >
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M19.709 19.708h-3.561v-5.347c0-1.276-.027-2.918-1.78-2.918-1.782 0-2.055 1.391-2.055 2.827v5.438h-3.562v-10.984h3.421v1.503h.047c.477-.901 1.639-1.853 3.372-1.853 3.606 0 4.271 2.371 4.271 5.453v5.881zm-12.564-12.707c-1.144 0-2.067-.925-2.067-2.066 0-1.144.923-2.065 2.067-2.065 1.142 0 2.066.921 2.066 2.065 0 1.141-.924 2.066-2.066 2.066zm1.782 12.707h-3.565v-10.984h3.565v10.984zm13.073-20h-18.392c-.663 0-1.205.541-1.205 1.205v18.392c0 .662.542 1.204 1.205 1.204h18.392c.664 0 1.205-.542 1.205-1.204v-18.392c0-.664-.541-1.205-1.205-1.205z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://github.com"
+                class="text-gray-400 hover:text-blue-400 transition"
+              >
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.807 1.305 3.492.998.108-.776.418-1.305.762-1.605-2.665-.305-5.467-1.335-5.467-5.93 0-1.31.47-2.38 1.235-3.22-.125-.303-.535-1.524.115-3.176 0 0 1.01-.323 3.3 1.23.96-.267 1.985-.399 3.005-.405 1.02.006 2.045.138 3.005.405 2.29-1.553 3.3-1.23 3.3-1.23.65 1.653.24 2.874.115 3.176.765.84 1.235 1.91 1.235 3.22 0 4.61-2.805 5.625-5.475 5.92.43.37.823 1.102.823 2.222 0 1.605-.015 2.898-.015 3.293 0 .32.215.694.825.577 4.765-1.585 8.205-6.082 8.205-11.385 0-6.627-5.373-12-12-12z"
+                  />
+                </svg>
+              </a>
             </div>
           </div>
+
+          <!-- Quick Links -->
+          <div class="space-y-4">
+            <h3 class="text-xl font-semibold text-blue-300">Quick Links</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#home" class="hover:text-blue-400 transition">Home</a>
+              </li>
+              <li>
+                <a href="#about" class="hover:text-blue-400 transition"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="#skills" class="hover:text-blue-400 transition"
+                  >Skills</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="hover:text-blue-400 transition"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Copyright -->
+          <div class="text-center md:text-left">
+            <p class="text-gray-400">
+              &copy; 2024 Mohotasir Al Mamun. All rights reserved.
+            </p>
+            <p class="text-gray-500 mt-2">Built with 💙 using Tailwind CSS</p>
+          </div>
         </div>
-      </footer>
-      
-
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="main.js"></script>
-</body>
-
+    <script>
+      AOS.init();
+    </script>
+    
+  </body>
 </html>
